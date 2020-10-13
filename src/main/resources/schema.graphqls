@@ -1,0 +1,16 @@
+type FoodInfo @key(fields: "food_number") {
+	food_number: Int!
+	food_name: String!
+	food_price: Int!
+	RestaurantInfo: RestaurantInfo
+}
+
+type RestaurantInfo @key(fields: "company_code") @extends {
+	company_code: String! @external
+	foods: [FoodInfo]
+}
+
+type Query{
+	foods: [FoodInfo]
+	food(food_name: String): FoodInfo
+}
