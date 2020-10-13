@@ -4,7 +4,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: maple8542!
-    url: 'jdbc:mysql://restdatabase.cq8chvlpmcwy.ap-northeast-2.rds.amazonaws.com:3306/kinddb?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false     '
+    url: 'jdbc:mysql://restdatabase.cq8chvlpmcwy.ap-northeast-2.rds.amazonaws.com:3306/menudb?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false     '
     username: root
   jpa:
     hibernate:
